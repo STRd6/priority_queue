@@ -1,7 +1,7 @@
 /*global document, jQuery, ok, test */
 
 (function($) {
-  $(document).ready(function() {
+  $(function() {
     test("PriorityQueue#push", function() {
       var queue = PriorityQueue();
 
