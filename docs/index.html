@@ -38,7 +38,7 @@ is to return elements with the highest priority first.</p>
 
             </div>
             <div class="content"><pre><code class="lang-coffeescript"><span class="function"><span class="title">PriorityQueue</span></span> = (options={}) -&gt;
-  contents = []
+  items = []
   sorted = <span class="literal">false</span>
 
   <span class="keyword">if</span> options.low
@@ -47,7 +47,7 @@ is to return elements with the highest priority first.</p>
     sortStyle = prioritySortHigh
 
   <span class="function"><span class="title">sort</span></span> = -&gt;
-    contents.sort sortStyle
+    items.sort sortStyle
     sorted = <span class="literal">true</span></code></pre>
 </div>
         </li>
@@ -58,7 +58,7 @@ is to return elements with the highest priority first.</p>
               <div class="pilwrap">
                 <a class="pilcrow" href="#section-3">&#182;</a>
               </div>
-              <p>Accessor functions need to ensure the contents are sorted. This decorator wraps
+              <p>Accessor functions need to ensure the items are sorted. This decorator wraps
 that up nicely.</p>
 
             </div>
@@ -94,7 +94,7 @@ that up nicely.</p>
 
             </div>
             <div class="content"><pre><code class="lang-coffeescript">  pop: ensureSorted -&gt;
-    contents.pop()?.object</code></pre>
+    items.pop()?.object</code></pre>
 </div>
         </li>
         
@@ -104,12 +104,12 @@ that up nicely.</p>
               <div class="pilwrap">
                 <a class="pilcrow" href="#section-6">&#182;</a>
               </div>
-              <p>Returns but does not remove the next element in the queue. If the queue is empty 
+              <p>Returns but does not remove the next element in the queue. If the queue is empty
 returns <code>undefined</code>.</p>
 
             </div>
             <div class="content"><pre><code class="lang-coffeescript">  top: ensureSorted -&gt;
-    contents[contents.length - <span class="number">1</span>]?.object</code></pre>
+    items[items.length - <span class="number">1</span>]?.object</code></pre>
 </div>
         </li>
         
@@ -124,7 +124,7 @@ it was found, false if not.</p>
 
             </div>
             <div class="content"><pre><code class="lang-coffeescript">  includes: (object) -&gt;
-    contents.reduce (found, item) -&gt;
+    items.reduce (found, item) -&gt;
       found <span class="keyword">or</span> (object <span class="keyword">is</span> item.object)
     , <span class="literal">false</span></code></pre>
 </div>
@@ -140,7 +140,7 @@ it was found, false if not.</p>
 
             </div>
             <div class="content"><pre><code class="lang-coffeescript">  size: -&gt;
-    contents.length</code></pre>
+    items.length</code></pre>
 </div>
         </li>
         
@@ -155,7 +155,7 @@ false otherwise.</p>
 
             </div>
             <div class="content"><pre><code class="lang-coffeescript">  empty: -&gt;
-    contents.length <span class="keyword">is</span> <span class="number">0</span></code></pre>
+    items.length <span class="keyword">is</span> <span class="number">0</span></code></pre>
 </div>
         </li>
         
@@ -169,7 +169,7 @@ false otherwise.</p>
 
             </div>
             <div class="content"><pre><code class="lang-coffeescript">  push: (object, priority) -&gt;
-    contents.push
+    items.push
       object: object
       priority: priority
 
