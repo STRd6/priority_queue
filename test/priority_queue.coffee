@@ -24,6 +24,9 @@ describe "PriorityQueue", ->
     ok queue.size() is 0, "queue.size() === 0"
     ok queue.empty(), "queue.empty()"
 
+  test "#pop empty queue", ->
+    equals PriorityQueue().pop(), undefined
+
   test "#pop", ->
     queue = PriorityQueue()
 
