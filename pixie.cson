@@ -1,0 +1,5 @@
+version: "2.0.0-pre"
+entryPoint: "main"
+remoteDependencies: [
+  "http://strd6.github.io/require/v0.2.2.js?"
+]
