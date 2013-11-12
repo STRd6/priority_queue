@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# 1384288055826
+
+CACHE:
+index.html
+http://strd6.github.io/require/v0.2.2.js?
+
+NETWORK:
+https://*
+http://*
+*
