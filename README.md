@@ -1,10 +1,12 @@
-== Description ==
+Description
+-----------
 
 A priority queue is a handy data structure with many uses. From graph search
 algorithms to simple job queues, having this in your toolbelt will help to give
 you a solid foundation.
 
-== Features ==
+Features
+--------
 
 * Simple to use and understand.
 * Creates a single PriorityQueue constructor.
@@ -14,7 +16,8 @@ you a solid foundation.
 
 The default is highest priority first, but when doing something like A* you want lowest priority first... it handles it: `queue = PriorityQueue({low: true});` Boom!
 
-== Example Usage ==
+Example Usage
+-------------
 
     # Highest priority first
     queue = PriorityQueue()
@@ -35,6 +38,7 @@ The default is highest priority first, but when doing something like A* you want
     queue.pop() # => "x"
     queue.pop() # => "y"
 
-== License ==
+License
+-------
 
 MIT
