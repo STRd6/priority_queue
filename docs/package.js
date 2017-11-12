@@ -199,7 +199,7 @@
     },
     "pixie.cson": {
       "path": "pixie.cson",
-      "content": "version: \"2.0.0\"\nentryPoint: \"main\"\n",
+      "content": "version: \"2.0.1\"\nentryPoint: \"main\"\n",
       "mode": "100644",
       "type": "blob"
     },
@@ -218,7 +218,7 @@
     },
     "pixie": {
       "path": "pixie",
-      "content": "module.exports = {\"version\":\"2.0.0\",\"entryPoint\":\"main\"};",
+      "content": "module.exports = {\"version\":\"2.0.1\",\"entryPoint\":\"main\"};",
       "type": "blob"
     },
     "test/priority_queue": {
@@ -231,10 +231,10 @@
     "url": "https://danielx.net/editor/zine2/"
   },
   "config": {
-    "version": "2.0.0",
+    "version": "2.0.1",
     "entryPoint": "main"
   },
-  "version": "2.0.0",
+  "version": "2.0.1",
   "entryPoint": "main",
   "repository": {
     "branch": "master",
